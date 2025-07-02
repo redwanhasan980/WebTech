@@ -4,84 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo List</title>
+    <title>My To Do List</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-    <div class="app-container">
-        <div class="todo-container">
-
-            <header class="todo-header">
-                <h1 class="todo-title">My Todo List</h1>
-            </header>
+    <div class="todo-container">
+        <h1>My To Do List</h1>
 
 
-            <section class="todo-input-section">
-                <div class="input-container">
-                    <input type="text" class="todo-input" placeholder="Add a new task..." maxlength="200"
-                        id="todoInput">
-                    <button class="btn btn-primary add-btn" id="addBtn">Add</button>
-                </div>
-            </section>
-
-
-            <section class="todo-filter-section">
-                <div class="filter-buttons">
-                    <button class="btn btn-filter active" data-filter="all">All</button>
-                    <button class="btn btn-filter" data-filter="active">Active</button>
-                    <button class="btn btn-filter" data-filter="completed">Completed</button>
-                </div>
-            </section>
-
-
-            <section class="todo-list-section">
-                <ul class="todo-list" id="todoList">
-                    <li class="todo-item">
-                        <input type="checkbox" class="todo-checkbox" id="task1">
-                        <label for="task1" class="todo-text">Complete the project proposal</label>
-                        <button class="btn btn-danger delete-btn">Delete</button>
-                    </li>
-                    <li class="todo-item completed">
-                        <input type="checkbox" class="todo-checkbox" id="task2" checked>
-                        <label for="task2" class="todo-text">Buy groceries for the week</label>
-                        <button class="btn btn-danger delete-btn">Delete</button>
-                    </li>
-                    <li class="todo-item">
-                        <input type="checkbox" class="todo-checkbox" id="task3">
-                        <label for="task3" class="todo-text">Schedule meeting with team</label>
-                        <button class="btn btn-danger delete-btn">Delete</button>
-                    </li>
-                    <li class="todo-item">
-                        <input type="checkbox" class="todo-checkbox" id="task4">
-                        <label for="task4" class="todo-text">Review code changes</label>
-                        <button class="btn btn-danger delete-btn">Delete</button>
-                    </li>
-                    <li class="todo-item completed">
-                        <input type="checkbox" class="todo-checkbox" id="task5" checked>
-                        <label for="task5" class="todo-text">Update documentation</label>
-                        <button class="btn btn-danger delete-btn">Delete</button>
-                    </li>
-                </ul>
-            </section>
-
-
-            <section class="todo-stats-section">
-                <div class="stats">
-                    <span class="stat-item">
-                        <span class="stat-number" id="totalTasks">5</span> total tasks
-                    </span>
-                    <span class="stat-separator">•</span>
-                    <span class="stat-item">
-                        <span class="stat-number" id="completedTasks">2</span> completed
-                    </span>
-                    <span class="stat-separator">•</span>
-                    <span class="stat-item">
-                        <span class="stat-number" id="activeTasks">3</span> remaining
-                    </span>
-                </div>
-            </section>
+        <div class="input-section">
+            <input type="text" id="todoInput" placeholder="Add a new task...">
+            <button id="addTaskButton">
+                Add
+            </button>
         </div>
+
+
+        <ul id="todoList" class="todo-list">
+
+            <li class="todo-item">
+                <span>Paying Current Bill</span>
+                <button>Delete</button>
+            </li>
+            <li class="todo-item">
+                <span>Buying a Pen</span>
+                <button>Delete</button>
+            </li>
+            <li class="todo-item">
+                <span>Read the book</span>
+                <button>Delete</button>
+            </li>
+        </ul>
     </div>
 </body>
 
