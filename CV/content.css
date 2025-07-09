@@ -1,0 +1,116 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  /* or min-height: 297mm; if you're using A4 format */
+}
+
+.my-profile {
+  height: 380px;
+  background-color: #1e1e2f;
+  /* dark digital-style background */
+  color: #f0f0f0;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+
+.work-experience-container {
+  flex: 1;
+  /* takes the remaining space */
+  background-color: #3498db;
+  /* blue (example) */
+}
+
+
+.content-header {
+
+
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #4dd0e1;
+  border-bottom: 2px solid #4dd0e1;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 4px #4dd0e1;
+  letter-spacing: 0.07em;
+}
+
+.my-profile p {
+  font-size: 1rem;
+  line-height: 1.7;
+  text-align: justify;
+  margin: 0;
+  word-break: normal;
+  word-wrap: break-word;
+}
+
+
+.work-experience-container {
+  background-color: #121829;
+  /* digital dark background */
+  color: #f0f0f0;
+  padding: 30px;
+  border-radius: 10px;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+
+
+
+.work-experience-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.work-experience-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 10px rgba(77, 208, 225, 0.4);
+}
+
+.work-experience {
+  background-color: #1c1f2e;
+  border: 1px solid #4dd0e1;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  /* smaller text */
+}
+
+.work-experience-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #00d8ff;
+  margin-bottom: 5px;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.work-experience-details {
+  list-style-type: disc;
+  padding-left: 18px;
+}
+
+.work-experience-details li {
+  margin-bottom: 6px;
+  line-height: 1.4;
+  font-size: 0.9rem;
+  color: #d1d5db;
+}
