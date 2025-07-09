@@ -1,6 +1,6 @@
 .profile {
   width: 80%;
-  background-color: #2787e7;
+  background-color: #2d2f4a;
   /* blue */
   color: white;
 
@@ -12,7 +12,7 @@
 
 .profile-image-container {
   height: 280px;
-  background-color: aqua;
+  background-color: #2d2f4a;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -47,28 +47,30 @@
 }
 
 .profile-details {
-  background-color: blueviolet;
+  background-color: #2d2f4a;
 }
 
 .contact-container {
   height: 250px;
-  background-color: #3498db;
+  background-color: #2d2f4a;
   /* blue */
   padding: 20px;
-  color: white;
+  color: #f0f0f0;
 }
 
 .edu-container {
+  margin-top: 20px;
   height: 400px;
-  background-color: #2ecc71;
+  background-color: #2d2f4a;
   /* green */
   padding: 20px;
-  color: white;
+  color: #f0f0f0;
 }
 
 .skill-container {
+  margin-top: 20px;
   height: 300px;
-  background-color: #f39c12;
+  background-color: #2d2f4a;
   /* orange */
   padding: 20px;
   color: white;
@@ -78,11 +80,17 @@
   font-size: 1.2rem;
   font-weight: bold;
   letter-spacing: 0.1em;
-  margin-bottom: 10px;
-  border-bottom: 2px solid white;
+  margin-bottom: 20px;
+
   padding-bottom: 5px;
   display: flex;
   align-items: flex-end;
+
+  color: #4dd0e1;
+  border-bottom: 2px solid #4dd0e1;
+
+  text-shadow: 0 0 4px #4dd0e1;
+
 
 }
 
@@ -108,36 +116,41 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 30px;
-  height: 30px;
   padding-left: 5px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
-  background-color: rgb(31, 0, 145);
-  /* Background circle */
-  color: #81bffa;
-  /* Icon color (visible by default) */
+
+  background: linear-gradient(145deg, #252a42, #1b1c2c);
+  /* modern soft lighting */
+  color: #4dd0e1;
+  /* cyber-cyan icon color */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3), 0 0 0 1px #4dd0e1 inset;
+
   text-decoration: none;
-  transition: background-color 0.3s, color 0.3s;
   font-size: 1.2rem;
-  /* Size of the icon */
-  line-height: 1;
-  /* Ensures vertical centering */
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .icon-btn i {
   pointer-events: none;
-  font-size: 1rem;
-
+  font-size: 1.1rem;
+  line-height: 1;
 }
 
+/* Hover effect */
 .icon-btn:hover {
-  background-color: #333;
-  color: white;
+  background: #4dd0e1;
+  color: #1e1e2f;
+  /* dark text on light cyan bg */
+  box-shadow: 0 0 6px #4dd0e1, 0 0 20px #4dd0e1;
+  transform: scale(1.1);
 }
 
 .edu-item {
   margin-top: 20px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #2d2f4a (255, 255, 255, 0.1);
   padding: 15px;
   border-left: 4px solid #fff;
   border-radius: 6px;
@@ -147,7 +160,7 @@
 .edu-date {
   font-size: 0.9rem;
   font-weight: bold;
-  color: #ddd;
+  color: #a8a8a8;
   margin-bottom: 5px;
 }
 

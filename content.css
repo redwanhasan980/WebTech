@@ -16,8 +16,9 @@
   flex-direction: column;
   justify-content: flex-start;
   font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
-  border-radius: 10px;
+
   overflow: hidden;
+  /* Ensures content doesn't overflow */
 }
 
 
@@ -54,11 +55,11 @@
 
 
 .work-experience-container {
-  background-color: #121829;
+  background-color: #1e1e2f;
   /* digital dark background */
   color: #f0f0f0;
   padding: 30px;
-  border-radius: 10px;
+
   font-family: 'Segoe UI', 'Roboto', sans-serif;
   box-sizing: border-box;
   height: 100%;
@@ -76,7 +77,7 @@
 
 .work-experience-link:hover {
   transform: translateY(-3px);
-  box-shadow: 0 0 10px rgba(77, 208, 225, 0.4);
+  box-shadow: 0 0 50px rgba(87, 232, 251, 0.4);
 }
 
 .work-experience {
