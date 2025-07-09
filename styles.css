@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #bebebe;
+  color: #333;
+  line-height: 1.6;
+}
+
+.cv-container {
+  display: flex;
+  max-width: 210mm;
+  margin: 20px auto;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  min-height: 297mm;
+}
+
+/* Left section: takes 33.33% of the page width */
+.side-bar-container {
+  display: flex;
+  width: 33.34%;
+}
+
+/* Sidebar: 20% of sidebar container (i.e. 6.66% of full page) */
+.side-bar {
+  width: 20%;
+  background-color: #2c3e50;
+  /* dark */
+  color: white;
+
+}
+
+/* Profile: 80% of sidebar container (i.e. 26.66% of full page) */
+
+
+
+/* Right section: takes 66.66% of page */
+.main-content {
+  width: 66.66%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Fixed heights for header and designation */
+.header {
+  height: 150px;
+  background-color: #e74c3c;
+  /* red */
+  color: white;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.name {
+  font-size: 2.7rem;
+  /* big font size, adjust as needed */
+  margin: 0;
+  /* remove default margin */
+}
+
+.designation {
+  height: 50px;
+  background-color: #8e44ad;
+  /* purple */
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Remaining height for content */
+.content {
+  flex: 1;
+  background-color: #27ae60;
+  /* green */
+  color: white;
+  padding: 20px;
+}
+
+.software-engineer {
+  font-size: 1rem;
+  /* smaller font */
+  letter-spacing: 0.4em;
+  /* space between letters */
+  margin: 0;
+  font-weight: 100;
+
+}
+
+.side-bar-box {
+  width: 100%;
+  height: 50px;
+  background-color: #8e44ad;
+  margin-top: 150px;
+  /* moves box down by 100px */
+}
