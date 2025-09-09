@@ -54,10 +54,33 @@ function deleteTask(req, res) {
   res.json({ message: "Task deleted successfully" });
 }
 
+// Search tasks by title or description
+
+function searchTask (req, res, next)  {
+  try {
+    const { query } = req.query; // e.g., /api/tasks/search?query=milk
+    if (!query) {
+      return res.status(400).json({ message: "Query parameter is required" });
+    }
+
+    const result = tasks.filter(
+      (task) =>
+        task.title.toLowerCase().includes(query.toLowerCase()) ||
+        task.description.toLowerCase().includes(query.toLowerCase())
+    );
+
+    res.json(result);
+  } catch (error) {
+    next(error);
+  }
+};
+
+
 module.exports = {
   createTask,
   getAllTasks,
   getTaskById,
   updateTask,
   deleteTask,
+  searchTask,
 };
